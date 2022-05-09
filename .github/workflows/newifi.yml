@@ -1,4 +1,4 @@
-name: name: Build Padavan
+name: name: PSG1218
 
 on: 
   release:
