@@ -1,4 +1,4 @@
-name: PSG1218
+name: PSG1218_nano
 
 on: 
   release:
