@@ -43,7 +43,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: $name
+        TNAME: PSG1218
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
