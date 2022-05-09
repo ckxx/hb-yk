@@ -1,4 +1,4 @@
-name: Build Padavan
+name: PSG1218_nano
 
 on: 
   release:
@@ -43,7 +43,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: YK-L1
+        TNAME: PSG1218_nano
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
