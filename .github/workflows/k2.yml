@@ -1,4 +1,4 @@
-name: PSG1218_nano4
+name: PSG1218_nano4-zero
 
 on: 
   release:
@@ -94,8 +94,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #内网穿透FRPS
         echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=y" >> .config #TUNSAFE
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #阿里DDNS
-        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
-        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config #smartdns二进制文件
+        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config #smartdns
+        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> .config #smartdns二进制文件
         echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=n" >> .config #v2ray二进制文件
         echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=n" >> .config #集成trojan执行文件，如果不集成，会从网上下载下来执行，不影响正常使用
         echo "CONFIG_FIRMWARE_INCLUDE_KOOLPROXY=n" >> .config #KP广告过滤
@@ -109,9 +109,9 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> .config #网易云解锁
         echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config #网易云解锁GO版本执行文件（4M多）注意固件超大小
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
-        echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >> .config #napt66
+        echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=y" >> .config #napt66
         echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=y" >>.config  ### Include xUPNPd IPTV mediaserver. ~0.3MB
-        echo "CONFIG_FIRMWARE_INCLUDE_MINIDLNA=y" >> .config  ### Include Minidlna UPnP mediaserver. ~1.6MB
+        echo "CONFIG_FIRMWARE_INCLUDE_MINIDLNA=n" >> .config  ### Include Minidlna UPnP mediaserver. ~1.6MB
         echo "CONFIG_FIRMWARE_INCLUDE_FIREFLY=n" >> .config  ### Include Firefly iTunes mediaserver. ~1.0MB
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config  ### Include Transmission torrent. openssl ~1.2MB, transmission ~1.5MB
         echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >> .config ### Include FTP server. ~0.2MB
