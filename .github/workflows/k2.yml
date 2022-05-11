@@ -90,7 +90,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=y" >> .config #SS server
         echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=y" >> .config #DNSFORWARDER
         echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config #adbyby plus+
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=Y" >> .config #内网穿透FRPC
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #内网穿透FRPC
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #内网穿透FRPS
         echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=y" >> .config #TUNSAFE
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #阿里DDNS
@@ -114,8 +114,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_MINIDLNA=y" >> .config  ### Include Minidlna UPnP mediaserver. ~1.6MB
         echo "CONFIG_FIRMWARE_INCLUDE_FIREFLY=y" >> .config  ### Include Firefly iTunes mediaserver. ~1.0MB
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config  ### Include Transmission torrent. openssl ~1.2MB, transmission ~1.5MB
-        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >> .config ### Include FTP server. ~0.2MB
-        echo "CONFIG_FIRMWARE_INCLUDE_SMBD=n" >> .config ### Include SMB (and WINS) server. ~1.5MB
+        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=y" >> .config ### Include FTP server. ~0.2MB
+        echo "CONFIG_FIRMWARE_INCLUDE_SMBD=y" >> .config ### Include SMB (and WINS) server. ~1.5MB
         echo "CONFIG_FIRMWARE_INCLUDE_LPRD=y" >> .config  ### Include LPR printer daemon. ~0.12MB
         echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config  ### Include OpenVPN. IPv6 required. openssl ~1.2MB, openvpn ~0.4MB
         ####################################################################################
