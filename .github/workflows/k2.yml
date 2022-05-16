@@ -1,4 +1,4 @@
-name: newifi-mini
+name: k2
 
 on: 
   release:
@@ -43,7 +43,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: YK-L1
+        TNAME: PSG1218
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
